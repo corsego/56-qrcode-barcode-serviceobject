@@ -24,7 +24,10 @@
         <tr>
           <td><%= post.id %></td>
           <td><%= post.created_at.strftime("%d/%H/%Y") %></td>
-          <td><%= post.title %></td>
+          <td>
+            <%= image_tag(post.qr_code) if post.qr_code.attached? %>
+            <%= image_tag(post.barcode) if post.barcode.attached? %>
+          </td>
           <td><%= simple_format(post.content) %></td>
           <td><%= link_to 'Show', post %></td>
           <td><%= link_to 'Edit', edit_post_path(post) %></td>

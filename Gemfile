@@ -57,3 +57,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem "faker"
+
+gem "rqrcode", "~> 2.1"
+
+gem "chunky_png", "~> 1.4"
+
+gem "barby", "~> 0.6.8"
